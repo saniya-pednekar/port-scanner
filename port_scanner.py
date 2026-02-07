@@ -1,6 +1,6 @@
 import socket
 
-target = input("Enter target IP or website: ")
+target = input("Enter target IP or website: ").strip()
 
 print("Scanning target:", target)
 
@@ -14,3 +14,4 @@ for port in range(20, 1025):
         print("Port", port, "is OPEN")
 
     s.close()
+
